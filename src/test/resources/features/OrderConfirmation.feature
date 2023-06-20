@@ -1,5 +1,5 @@
 Feature: Order Confirmation Tests
-
+@Smoke
   Scenario: Verify user can place order
     Given user open website
     Then verify user is on login page

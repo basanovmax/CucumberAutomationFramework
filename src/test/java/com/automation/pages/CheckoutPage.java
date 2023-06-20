@@ -22,6 +22,8 @@ public class CheckoutPage extends BasePage {
     @FindBy(id = "continue")
     WebElement continueBtn;
 
+    @FindBy(id = "cancel")
+    WebElement cancelBtn;
     public void fillShippingDetails() {
         firstName.sendKeys(ConfigReader.getProperty("checkout.firstname"));
         lastName.sendKeys(ConfigReader.getProperty("checkout.lastname"));
@@ -30,6 +32,9 @@ public class CheckoutPage extends BasePage {
 
     public void clickOnContinueBtn() {
         continueBtn.click();
+    }
+    public void clickOnCancelBtn() {
+        cancelBtn.click();
     }
 
     public void verifyCheckoutPage() {

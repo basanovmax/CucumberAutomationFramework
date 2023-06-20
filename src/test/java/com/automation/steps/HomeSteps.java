@@ -33,4 +33,15 @@ public class HomeSteps {
     public void clickOnLogoutLink() {
         homePage.clickOnLogoutLink();
     }
+
+	@When("user sorting the product by price - high to low")
+	public void userSortingTheProductByPriceHighToLow() {
+        homePage.clickOnSortMenu();
+	}
+
+    @Then("verify products are displayed by price high to low")
+    public void verifyProductsAreDisplayedByPriceHighToLow() {
+        homePage.verifyPriceHighToLowAtHomePage();
+
+    }
 }

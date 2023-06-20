@@ -1,6 +1,6 @@
-Feature: Order Confirmation Tests
-@Smoke
-  Scenario: Verify user can place order
+Feature: Verify Checkout Functionality
+
+  Scenario: Verify user can navigate back to homepage from checkout page
     Given user open website
     Then verify user is on login page
     When user login with username "login.username" and password "login.password"
@@ -10,8 +10,9 @@ Feature: Order Confirmation Tests
     Then verify user is on cart page
     When user click on checkout button
     Then verify user is on checkout page
-    When user fill all shipping details
-    And click on continue button
-    Then verify user is on review page
-    When user click on finish button
-    Then verify user is on order confirmation page
+    When user click on cancel button
+    Then verify user is on cart page
+    And user click on continue shopping button
+    Then verify user is on home page
+
+

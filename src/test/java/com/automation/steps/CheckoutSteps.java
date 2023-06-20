@@ -22,4 +22,9 @@ public class CheckoutSteps {
     public void click_on_continue_button() {
         checkoutPage.clickOnContinueBtn();
     }
+
+    @When("user click on cancel button")
+    public void userClickOnCancelButton() {
+        checkoutPage.clickOnCancelBtn();
+    }
 }

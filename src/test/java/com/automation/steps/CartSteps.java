@@ -28,4 +28,6 @@ public class CartSteps {
     public void verifyMoreThanOneItemIsAvailableOnCartPage() {
         cartPage.verifyMoreThanOneItemInCart();
     }
+
+
 }
