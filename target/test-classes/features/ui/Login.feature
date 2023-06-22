@@ -1,3 +1,4 @@
+@ui
 Feature: Validate login functionality
 @Smoke
   Scenario: Verify user can logout

@@ -1,3 +1,4 @@
+@ui
 Feature: Order Confirmation Tests
 @Smoke
   Scenario: Verify user can place order

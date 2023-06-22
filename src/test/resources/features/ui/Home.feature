@@ -1,3 +1,4 @@
+@ui
 Feature: Verify HomePage Functionality
 
   Scenario: Verify sorting functionality
